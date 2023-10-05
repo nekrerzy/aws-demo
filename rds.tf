@@ -3,7 +3,7 @@
 resource "aws_db_instance" "myi-rds-nstance" {
   engine               = "mysql"
   identifier           = "project-a-rdsinstance"
-  allocated_storage    =  25
+  allocated_storage    =  20
   engine_version       = "5.7"
   instance_class       = "db.t2.micro"
   username             = "myrdsuser"
