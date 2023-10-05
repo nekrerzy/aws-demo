@@ -1,0 +1,36 @@
+# Archivos de estado de Terraform
+*.tfstate
+*.tfstate.*
+
+# Archivos de configuración local
+*.tfvars
+
+# Archivos de bloqueo de módulos
+.terraform/
+
+# Archivos de log
+*.log
+
+# Directorio de backup
+*.backup
+
+# Byte-compiled, optimized, and DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Crash logs
+*.last-run
+
+# Overrides
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Misc
+*.retry
+
+# Directories
+.terraform.d/
+.crash.log
