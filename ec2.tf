@@ -32,7 +32,7 @@ resource "aws_key_pair" "projectA" {
 
 #instance EC2 for project A
 resource "aws_instance" "projectA" {
-  ami           = data.aws_ami.ubuntu.id
+  ami           = "ami-022a6fda092a41eb3"
   instance_type = "t3.micro"
   key_name = "projectA"
   vpc_security_group_ids = [aws_security_group.projectA-sg.id]

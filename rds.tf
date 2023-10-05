@@ -13,4 +13,9 @@ resource "aws_db_instance" "myi-rds-nstance" {
   db_subnet_group_name = aws_db_subnet_group.project-a-rds-subnet-group.id
   skip_final_snapshot  = true
   publicly_accessible =  false
+  multi_az = true
+  apply_immediately = true
+  tags = {
+    Name = "project-a-rdsinstance"
+  }
 }
